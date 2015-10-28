@@ -1,3 +1,10 @@
+"""
+A simple GUI calculator written in python using Tkinter library.
+
+Copyright (c) 2015, Aman Deep
+All rights reserved.
+"""
+
 from Tkinter import *
 class calc:
 	
