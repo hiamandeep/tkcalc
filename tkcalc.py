@@ -4,6 +4,8 @@ import math
 
 class calc:
 	def getandreplace(self):
+		"""replace x with * and ÷ with /"""
+		
 		self.expression = self.e.get()
 		self.newtext=self.expression.replace(self.newdiv,'/')
 		self.newtext=self.newtext.replace('x','*')
