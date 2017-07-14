@@ -1,4 +1,5 @@
 #-*-coding: utf-8-*-
+from __future__ import division
 from Tkinter import *
 import math
 
@@ -43,7 +44,7 @@ class calc:
 		self.getandreplace()
 		try: 
 			self.value= eval(self.newtext) #evaluate the expression using the eval function
-		except SyntaxError or NameErrror:
+		except SyntaxError or NameError:
 			self.e.delete(0,END)
 			self.e.insert(0,'Invalid Input!')
 		else:
