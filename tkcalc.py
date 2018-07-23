@@ -1,4 +1,7 @@
 #-*-coding: utf-8-*-
+# from https://www.techinfected.net/2016/02/make-gui-calculator-in-python-windows-linux.html
+# % provides a remainder, not a true % operation
+
 from tkinter import *
 import math
 
