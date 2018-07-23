@@ -1,5 +1,5 @@
 #-*-coding: utf-8-*-
-from Tkinter import *
+from tkinter import *
 import math
 
 class calc:
@@ -16,7 +16,7 @@ class calc:
 		self.getandreplace()
 		try: 
 			self.value= eval(self.newtext) #evaluate the expression using the eval function
-		except SyntaxError or NameErrror:
+		except SyntaxError or NameError:
 			self.e.delete(0,END)
 			self.e.insert(0,'Invalid Input!')
 		else:
@@ -29,7 +29,7 @@ class calc:
 		self.getandreplace()
 		try: 
 			self.value= eval(self.newtext) #evaluate the expression using the eval function
-		except SyntaxError or NameErrror:
+		except SyntaxError or NameError:
 			self.e.delete(0,END)
 			self.e.insert(0,'Invalid Input!')
 		else:
@@ -43,7 +43,7 @@ class calc:
 		self.getandreplace()
 		try: 
 			self.value= eval(self.newtext) #evaluate the expression using the eval function
-		except SyntaxError or NameErrror:
+		except SyntaxError or NameError:
 			self.e.delete(0,END)
 			self.e.insert(0,'Invalid Input!')
 		else:
@@ -73,7 +73,7 @@ class calc:
 		self.e.focus_set() #Sets focus on the input text area
 				
 		self.div='÷'
-		self.newdiv=self.div.decode('utf-8')
+		self.newdiv=self.div
 
 		#Generating Buttons
 		Button(master,text="=",width=10,command=lambda:self.equals()).grid(row=4, column=4,columnspan=2)
