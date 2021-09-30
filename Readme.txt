@@ -1,6 +1,6 @@
 # A simple GUI calculator written in python using Tkinter library.
 # This is the program to make a simple GUI calculator in python. 
-# You can copy the command from below and paste it in your IDE.
+
 
 
 import sys
